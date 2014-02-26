@@ -31,37 +31,89 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="welcome-to-bouncybox" class="anchor" href="#welcome-to-bouncybox"><span class="octicon octicon-link"></span></a>Welcome to BouncyBox!</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><strong>Bouncy box</strong> is a light-weight jQuery plug-in which enables you to create contents that will have a bouncing animation as it enters and exits the screen.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><em>In other words, they will go like <strong>bounce</strong>! and <strong>bounce</strong>! and <strong>bounce</strong> like a <strong>ball</strong>!</em></p>
+
+<hr><h2>
+<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<ul>
+<li><strong>bouncyBoxRegister()</strong></li>
+<li><strong>bouncyBox()</strong></li>
+<li><strong>bouncyBoxDismiss()</strong></li>
+</ul><h3>
+<a name="bouncyboxregister" class="anchor" href="#bouncyboxregister"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxRegister()</a>
+</h3>
+
+<p><strong>Description</strong><br>
+This method initializes the element(s) to be used with the <code>bouncyBox()</code> method. This method simply reposition the target element(s) to the initial position when <code>bouncyBox()</code> method is used. It is best to invoke this method to the target element(s) right after the page has been loaded(<code>ready()</code>).  </p>
+
+<p><strong>Syntax</strong><br><code>$(selector).bouncyBoxRegister()</code>  </p>
+
+<p><strong>Parameters</strong><br>
+none  </p>
+
+<p><strong>Return Value</strong><br>
+Returns a jQuery object  </p>
+
+<p><strong>Example</strong><br><code>$("#selector1,#selector2").bouncyBoxRegister();</code>  </p>
+
+<h3>
+<a name="bouncybox" class="anchor" href="#bouncybox"><span class="octicon octicon-link"></span></a><a href="#">bouncyBox()</a>
+</h3>
+
+<p><strong>Description</strong><br>
+Performs the bounce animation to the target element.  </p>
+
+<p><strong>Syntax</strong><br><code>$(selector).bouncyBox([speed])</code><br><code>$(selector).bouncyBox([callback])</code><br><code>$(selector).bouncyBox([speed,callback])</code>  </p>
+
+<p><strong>Parameters</strong><br><strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em><br><strong>callback</strong> (function) - <em>A function that will be invoked right after the animation has completed.</em>  </p>
+
+<p><strong>Return Value</strong><br>
+Returns a jQuery object  </p>
+
+<p><strong>Examples</strong><br><em>Example 1:  No parameter</em><br><code>$("#selector1").bouncyBox();</code><br><em>Example 2:  Speed parameter</em><br><code>$("#selector1").bouncyBox(500);</code><br><em>Example 3: Callback function parameter</em>  </p>
+
+<pre><code>$("#selector1").bouncyBox(function(){
+    alert("Done!");
+})
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><em>Example 4:Speed and Callback parameter</em>  </p>
+
+<pre><code>$("#selector1").bouncyBox(500,function(){
+    alert("Done!");
+})
+</code></pre>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="bouncyboxdismiss" class="anchor" href="#bouncyboxdismiss"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxDismiss()</a>
+</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p><strong>Description</strong><br>
+Hides back the target element by bouncing it away. This is the opposite to <code>bouncyBox()</code> method.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><strong>Syntax</strong><br><code>$(selector).bouncyBoxDissmiss([speed])</code>  </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><strong>Parameters</strong><br><strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em>  </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><strong>Return Value</strong><br>
+Returns a jQuery object  </p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><strong>Example</strong><br><code>$("#selector1").bouncyBoxDismiss();</code>  </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<hr><h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>A quick demo can be found at: <a href="http://iwisdomsky.tk/bouncy-box">http://iwisdomsky.tk/bouncy-box</a></p>
+
+<p>You can also visit our github <a href="https://github.com/WisdomSky/BouncyBox">repository</a> for the demo source.</p>
+
+<p>For inquiries and suggestions. Visit my facebook account and leave some message: <a href="http://facebook.com/WisdomSky">http://facebook.com/WisdomSky</a></p>
       </section>
     </div>
 
@@ -73,7 +125,17 @@ $ git checkout gh-pages
       </footer>
     </div>
 
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-48447890-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
 
   </body>
 </html>

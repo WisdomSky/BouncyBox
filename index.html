@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery: Bouncy Box | WisdomSky</title>
+    <meta property="og:url" content="http://iwisdomsky/bouncy-box" />
+    <meta property="og:title" content="jQuery: Bouncy Box | WisdomSky" />
+    <meta property="og:image" content="http://iwisdomsky.tk/!jquery-projectile-animation-plugin/wisdomsky.png" />
+    <meta property="og:description" content="A jQuery plug-in that lets you create a dialog that will bounce its way in and out!" />
+    <style type="text/css">
+        body{
+            background-color: #a4ffe7;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        #header{
+            width: 100%;
+            height: 75px;
+            background-color: #168496;
+        }
+        #brand{
+            color: #52ffba;
+            font-size: 40px;
+            font-weight: bold;
+            width: 300px;
+            height: 100%;
+            line-height: 75px;
+            padding-left: 30px;
+            font-family: Calibri, Sans Serif;
+        }
+        #bouncyBox{
+            height: 150px;
+            width: 250px;
+            background-color: #9573ff;
+            border-radius: 30%;
+            line-height: 150px;
+            text-align: center;
+            color: #ff0;
+            font-size: 18px;
+            font-family: Calibri, Sans Serif;
+        }
+        #container{
+            width: 100%;
+            height: 100%;
+            padding-top: 100px;
+            color: #2252a2;
+            font-size: 30px;
+            font-family: monospace;
+            text-align: center;
+        }
+        #author{
+            color: #74ffaf;
+            font-family: Calibri, Sans Serif;
+        }
+        #author a{
+            color: #30ff30;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #author a:hover{
+            color: #ffff00;
+        }
+        #bounce{
+            color: #ff0000;
+            cursor: pointer;
+        }
+        #bounce:hover{
+            color: #ffff00;
+        }
+    </style>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bouncybox.min.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+
+</head>
+<body>
+<div id="bouncyBox">This is a Bouncy Box example!</div>
+
+    <div id="header">
+        <div>
+            <span id="brand">BouncyBox</span>
+            <span style="font-size: 12px;color: #f77">v1.1</span>
+            <span id="author">By <a href="http://facebook.com/WisdomSky">WisdomSky</a></span>
+        </div>
+    </div>
+    <div id="container">
+        Click <span id="bounce">HERE</span> to see the bounce!<br/>
+    </div>
+</body>
+</html>

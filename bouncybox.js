@@ -1,6 +1,4 @@
-
 (function($){
-
 
     var a = function(props_obj,callback){
         var acallback,aangle,apower,aduration,aeasing,ascale;

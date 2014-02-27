@@ -33,6 +33,6 @@
     "docs": "https://WisdomSky.github.io/BouncyBox",
     "download": "https://github.com/WisdomSky/BouncyBox",
     "dependencies": {
-        "jquery": ">=1.5"
+        "jquery": ">=1.9"
     }
 }

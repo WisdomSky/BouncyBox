@@ -1,4 +1,21 @@
+/**
+ * Bouncy Box jQuery Plug-in
+ * Current version: 1.1
+ * http://iwisdomsky.tk/bouncy-box
+ * This software is licensed under the MIT License.
+ *
+ * Projectile Motion Animation jQuery Plug-in
+ * This software is licensed under the MIT License.
+ * http://iwisdomsky.tk/!jquery-projectile-animation-plugin/
+ *
+ * Copyright 2014 Julian Paolo Dayag
+ * All rights reserved.
+ * http://iwisdomsky.tk | http://wisdomsky.tk | http://facebook.com/WisdomSky
+ */
+
+
 (function($){
+
 
     var a = function(props_obj,callback){
         var acallback,aangle,apower,aduration,aeasing,ascale;
@@ -70,6 +87,7 @@
 
     var v = function(){
         this.hide().css({
+            opacity: 1.0,
             position:"fixed",
             left: -(parseInt(this.css("width"))),
             top: ($(window).height()/2)-(parseInt(this.css("height"))/2)

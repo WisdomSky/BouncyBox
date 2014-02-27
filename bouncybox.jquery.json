@@ -1,0 +1,38 @@
+{
+    "name": "bouncybox",
+    "title": "Bouncy Box",
+    "description": "A jQuery plug-in that lets you create a dialog that will bounce its way in and out!",
+    "keywords": [
+        "bounce",
+        "animation",
+        "box",
+        "bouncy",
+        "projectile",
+        "motion"
+    ],
+    "version": "1.1",
+    "author": {
+        "name": "WisdomSky",
+        "url": "https://github.com/WisdomSky/BouncyBox/blob/master/AUTHORS.md"
+    },
+    "maintainers": [
+        {
+            "name": "Julian Paolo Dayag",
+            "email": "julianpaolodayag123@gmail.com",
+            "url": "http://iwisdomsky.tk"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/WisdomSky/BouncyBox/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/WisdomSky/BouncyBox/issues",
+    "homepage": "https://github.com/WisdomSky/BouncyBox",
+    "docs": "https://WisdomSky.github.io/BouncyBox",
+    "download": "https://github.com/WisdomSky/BouncyBox",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

@@ -1,58 +1,52 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bouncybox : A jQuery plug-in that lets you create a dialog that will bounce its way in and out!" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Bouncybox</title>
+    <meta charset="UTF-8">
+    <title>Bouncybox by WisdomSky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Bouncybox</h1>
+      <h2 class="project-tagline">A jQuery plug-in that lets you create a dialog that will bounce its way in and out!</h2>
+      <a href="https://github.com/WisdomSky/BouncyBox" class="btn">View on GitHub</a>
+      <a href="https://github.com/WisdomSky/BouncyBox/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/WisdomSky/BouncyBox/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/WisdomSky/BouncyBox">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="welcome-to-bouncybox" class="anchor" href="#welcome-to-bouncybox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to BouncyBox!</h1>
 
-          <h1 id="project_title">Bouncybox</h1>
-          <h2 id="project_tagline">A jQuery plug-in that lets you create a dialog that will bounce its way in and out!</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/WisdomSky/BouncyBox/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/WisdomSky/BouncyBox/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="welcome-to-bouncybox" class="anchor" href="#welcome-to-bouncybox"><span class="octicon octicon-link"></span></a>Welcome to BouncyBox!</h1>
-
-<p><img src="http://iwisdomsky.tk/bouncy-box/logo.png" alt="http://iwisdomsky.tk/bouncy-box/logo.png"><br><strong>Bouncy box</strong> is a light-weight jQuery plug-in which enables you to create contents that will have a bouncing animation as it enters and exits the screen.</p>
+<p><img src="http://iwisdomsky.tk/bouncy-box/logo.png" alt="http://iwisdomsky.tk/bouncy-box/logo.png"><br>
+<strong>Bouncy box</strong> is a light-weight jQuery plug-in which enables you to create contents that will have a bouncing animation as it enters and exits the screen.</p>
 
 <p><em>In other words, they will go like <strong>bounce</strong>! and <strong>bounce</strong>! and <strong>bounce</strong> like a <strong>ball</strong>!</em></p>
 
-<hr><h2>
-<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h2>
+<hr>
+
+<h2>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h2>
 
 <ul>
 <li><strong><a href="#bouncyboxregister">bouncyBoxRegister()</a></strong></li>
 <li><strong><a href="#bouncybox">bouncyBox()</a></strong></li>
 <li><strong><a href="#bouncyboxdismiss">bouncyBoxDismiss()</a></strong></li>
-</ul><h3>
-<a name="bouncyboxregister" class="anchor" href="#bouncyboxregister"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxRegister()</a>
+</ul>
+
+<h3>
+<a id="bouncyboxregister" class="anchor" href="#bouncyboxregister" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxRegister()</a>
 </h3>
 
 <p><strong>Description</strong><br>
 This method initializes the element(s) to be used with the <code>bouncyBox()</code> method. This method simply reposition the target element(s) to the initial position when <code>bouncyBox()</code> method is used. It is best to invoke this method to the target element(s) right after the page has been loaded(<code>ready()</code>).  </p>
 
-<p><strong>Syntax</strong><br><code>$(selector).bouncyBoxRegister()</code>  </p>
+<p><strong>Syntax</strong><br>
+<code>$(selector).bouncyBoxRegister()</code>  </p>
 
 <p><strong>Parameters</strong><br>
 none  </p>
@@ -60,23 +54,34 @@ none  </p>
 <p><strong>Return Value</strong><br>
 Returns a jQuery object  </p>
 
-<p><strong>Example</strong><br><code>$("#selector1,#selector2").bouncyBoxRegister();</code>  </p>
+<p><strong>Example</strong><br>
+<code>$("#selector1,#selector2").bouncyBoxRegister();</code>  </p>
 
 <h3>
-<a name="bouncybox" class="anchor" href="#bouncybox"><span class="octicon octicon-link"></span></a><a href="#">bouncyBox()</a>
+<a id="bouncybox" class="anchor" href="#bouncybox" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#">bouncyBox()</a>
 </h3>
 
 <p><strong>Description</strong><br>
 Performs the bounce animation to the target element.  </p>
 
-<p><strong>Syntax</strong><br><code>$(selector).bouncyBox([speed])</code><br><code>$(selector).bouncyBox([callback])</code><br><code>$(selector).bouncyBox([speed,callback])</code>  </p>
+<p><strong>Syntax</strong><br>
+<code>$(selector).bouncyBox([speed])</code><br>
+<code>$(selector).bouncyBox([callback])</code><br>
+<code>$(selector).bouncyBox([speed,callback])</code>  </p>
 
-<p><strong>Parameters</strong><br><strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em><br><strong>callback</strong> (function) - <em>A function that will be invoked right after the animation has completed.</em>  </p>
+<p><strong>Parameters</strong><br>
+<strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em><br>
+<strong>callback</strong> (function) - <em>A function that will be invoked right after the animation has completed.</em>  </p>
 
 <p><strong>Return Value</strong><br>
 Returns a jQuery object  </p>
 
-<p><strong>Examples</strong><br><em>Example 1:  No parameter</em><br><code>$("#selector1").bouncyBox();</code><br><em>Example 2:  Speed parameter</em><br><code>$("#selector1").bouncyBox(500);</code><br><em>Example 3: Callback function parameter</em>  </p>
+<p><strong>Examples</strong><br>
+<em>Example 1:  No parameter</em><br>
+<code>$("#selector1").bouncyBox();</code><br>
+<em>Example 2:  Speed parameter</em><br>
+<code>$("#selector1").bouncyBox(500);</code><br>
+<em>Example 3: Callback function parameter</em>  </p>
 
 <pre><code>$("#selector1").bouncyBox(function(){
     alert("Done!");
@@ -91,41 +96,44 @@ Returns a jQuery object  </p>
 </code></pre>
 
 <h3>
-<a name="bouncyboxdismiss" class="anchor" href="#bouncyboxdismiss"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxDismiss()</a>
+<a id="bouncyboxdismiss" class="anchor" href="#bouncyboxdismiss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#">bouncyBoxDismiss()</a>
 </h3>
 
 <p><strong>Description</strong><br>
 Hides back the target element by bouncing it away. This is the opposite to <code>bouncyBox()</code> method.</p>
 
-<p><strong>Syntax</strong><br><code>$(selector).bouncyBoxDissmiss([speed])</code>  </p>
+<p><strong>Syntax</strong><br>
+<code>$(selector).bouncyBoxDissmiss([speed])</code>  </p>
 
-<p><strong>Parameters</strong><br><strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em>  </p>
+<p><strong>Parameters</strong><br>
+<strong>speed</strong> (integer)- <em>Sets the speed or duration of the animation. The lower the value, the faster the animation.</em>  </p>
 
 <p><strong>Return Value</strong><br>
 Returns a jQuery object  </p>
 
-<p><strong>Example</strong><br><code>$("#selector1").bouncyBoxDismiss();</code>  </p>
+<p><strong>Example</strong><br>
+<code>$("#selector1").bouncyBoxDismiss();</code>  </p>
 
-<hr><h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+<hr>
 
-<p><strong>A quick demo can be found at: <a href="http://iwisdomsky.tk/bouncy-box">http://iwisdomsky.tk/bouncy-box</a></strong></p>
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><strong>A quick demo can be found at: <a href="http://iwisdomsky.com/bouncy-box">http://iwisdomsky.tk/bouncy-box</a></strong></p>
 
 <p>You can also visit our github <a href="https://github.com/WisdomSky/BouncyBox">repository</a> for the demo source.</p>
 
 <p>For inquiries and suggestions. Visit my facebook account and leave some message: <a href="http://facebook.com/WisdomSky">http://facebook.com/WisdomSky</a></p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bouncybox maintained by <a href="https://github.com/WisdomSky">WisdomSky</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/WisdomSky/BouncyBox">Bouncybox</a> is maintained by <a href="https://github.com/WisdomSky">WisdomSky</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-              <script type="text/javascript">
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -136,6 +144,6 @@ Returns a jQuery object  </p>
             } catch(err) {}
           </script>
 
-
   </body>
 </html>
+
